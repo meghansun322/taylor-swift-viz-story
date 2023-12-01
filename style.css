@@ -32,8 +32,7 @@
   }
   
 
-p{
-  text-align: justify;
+p{ 
   margin-bottom: 25px;
   font-size: large;
 }
@@ -53,7 +52,6 @@ section#intro{
   margin: 0 auto;
   font-family: Arial, Helvetica, "san-serif";
   font-size: medium;
-  /* padding: 30px; */
   padding-top: 100px;
  
 }
@@ -209,5 +207,21 @@ p.seperator{
 
 #bar-button{
   display: none;
+
 }
 
+#bar-button-noColor{
+  display: none;
+}
+
+#chart-title{
+  display: none; 
+}
+
+#bar-button-Eras{
+  display: none;  
+}
+
+.source {
+  font-size: 10px;
+}
