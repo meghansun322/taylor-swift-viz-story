@@ -119,7 +119,22 @@ function showBarGraph(
             return "gray";
         }
       } else {
-        return COLOR._MIDNIGHTS_NAVY;
+        switch (d.tour) {
+          case "Fearless Tour":
+            return COLOR._LIGHT_BLUE;
+          case "Speak Now Tour":
+            return COLOR._BLUE;
+          case "Red Tour":
+            return COLOR._PURPLE;
+          case "1989 Tour":
+            return COLOR._RED;
+          case "Reputation Tour":
+            return COLOR._PINK;
+          case "*Eras Tour":
+            return COLOR._ORANGE;
+          default:
+            return COLOR._YELLOW;
+        }
       }
     })
     .attr("transform", "translate(200, 0)")

@@ -11,6 +11,13 @@ const COLOR = {
   _FOLKLORE_WHITE: "#f5f1f1;",
   _EVERMORE_BROWN: "#CC9D83",
   _MIDNIGHTS_NAVY: "#464D60",
+  _LIGHT_BLUE: "#46bff2",
+  _BLUE: "#465af2",
+  _PURPLE: "#7066ff",
+  _RED: "#ff6666",
+  _ORANGE: "#ffa166",
+  _PINK: "#f266ff",
+  _YELLOW: "#e5ff66",
 };
 
 const margin = { top: 60, right: 30, bottom: 70, left: 60 },
