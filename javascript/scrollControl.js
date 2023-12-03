@@ -8,6 +8,7 @@ var step = article.selectAll(".step");
 // Initialize the scrollama
 var scroller = scrollama();
 
+var previousIndex = 0;
 // generic window resize listener event
 function handleResize() {
   // 1. update height of step elements
@@ -29,6 +30,8 @@ function handleResize() {
 function handleStepEnter(response) {
   let currentIndex = response.index;
 
+  console.log("Previous index " + previousIndex);
+  console.log("Current index " + currentIndex);
   // add color to current step only
   step.classed("is-active", function (d, i) {
     return i === response.index;
@@ -40,13 +43,13 @@ function handleStepEnter(response) {
       showBarGraph("Revenue");
       break;
     case 1:
-      hideBarChart("chart1");
+      hideBarChart(previousIndex == 2 ? "chart2" : "chart1");
       break;
     case 2:
       showBarGraphNoColor("Revenue");
       break;
     case 3:
-      hideBarChart("chart2");
+      hideBarChart(previousIndex == 4 ? "chart3" : "chart2");
       break;
     case 4:
       showBarGraphHighlightEras("Revenue");
@@ -56,6 +59,8 @@ function handleStepEnter(response) {
       break;
     default:
   }
+
+  previousIndex = currentIndex;
   // update graphic based on step
 }
 

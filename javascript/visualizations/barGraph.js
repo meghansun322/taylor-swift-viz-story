@@ -3,22 +3,34 @@
 /// Removes or hides all barChart related classes/tags
 function hideBarChart(chart) {
   if (chart == "chart1") {
-    d3.selectAll("#bar-button").transition().duration(2000).style("opacity", 0);
+    d3.selectAll("#bar-button")
+      .transition()
+      .duration(1000)
+      .style("opacity", 0)
+      .transition()
+      .duration(100)
+      .style("display", "none");
   } else if (chart == "chart2") {
     d3.selectAll("#bar-button-noColor")
       .transition()
-      .duration(2000)
-      .style("opacity", 0);
+      .duration(1000)
+      .style("opacity", 0)
+      .transition()
+      .duration(100)
+      .style("display", "none");
   } else if (chart == "chart3") {
     d3.selectAll("#bar-button-Eras")
       .transition()
-      .duration(2000)
-      .style("opacity", 0);
+      .duration(1000)
+      .style("opacity", 0)
+      .transition()
+      .duration(100)
+      .style("display", "none");
   }
 
-  d3.selectAll("rect").transition().duration(2000).style("opacity", 0);
-  d3.select(".myXaxis").transition().duration(2000).style("opacity", 0);
-  d3.select(".myYaxis").transition().duration(2000).style("opacity", 0);
+  d3.selectAll("rect").transition().duration(1000).style("opacity", 0);
+  d3.select(".myXaxis").transition().duration(1000).style("opacity", 0);
+  d3.select(".myYaxis").transition().duration(1000).style("opacity", 0);
 }
 
 function showBarGraphNoColor(selectedVar) {
@@ -73,11 +85,17 @@ function showBarGraph(
     .style("opacity", 1);
 
   if (distinctColors == true) {
-    d3.selectAll("#bar-button").style("display", "inline-block");
+    d3.selectAll("#bar-button")
+      .style("display", "inline-block")
+      .style("opacity", 1);
   } else if (highlightEras == true) {
-    d3.selectAll("#bar-button-Eras").style("display", "inline-block");
+    d3.selectAll("#bar-button-Eras")
+      .style("display", "inline-block")
+      .style("opacity", 1);
   } else {
-    d3.selectAll("#bar-button-noColor").style("display", "inline-block");
+    d3.selectAll("#bar-button-noColor")
+      .style("display", "inline-block")
+      .style("opacity", 1);
   }
 
   // Maps data to existing bars; if not enough, generates more
