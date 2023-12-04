@@ -39,15 +39,3 @@ var svg = d3
   .attr("height", height + margin.top + margin.bottom);
 
 var g = svg.append("g");
-var xAxis = svg
-  .append("g")
-  .attr("class", "myXaxis")
-  .attr(
-    "transform",
-    "translate(200," + (400 - margin.top - margin.bottom) + ")"
-  );
-
-var yAxis = svg
-  .append("g")
-  .attr("class", "myYaxis")
-  .attr("transform", "translate(200,0)");

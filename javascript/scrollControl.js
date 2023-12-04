@@ -55,7 +55,7 @@ function handleStepEnter(response) {
       showBarGraphHighlightEras("Revenue");
       break;
     case 5:
-      hideBarChart("chart3");
+      hideBarChart(previousIndex == 6 ? "chart4" : "chart3");
       break;
     case 6:
       sideBySideGraph();
