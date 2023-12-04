@@ -115,11 +115,11 @@ svg{
   margin: auto;
 }
 
-#chart {
+/* #chart {
     width: 750px;
     float: right;
 
-  }
+  } */
   .buttons{
     margin-left: 300px;
   }
@@ -214,9 +214,14 @@ p.seperator{
   display: none;
 }
 
-#chart-title{
+#chart-title-1{
   display: none; 
 }
+
+#chart-title-2{
+  display: none; 
+}
+
 
 #bar-button-Eras{
   display: none;  

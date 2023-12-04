@@ -57,6 +57,9 @@ function handleStepEnter(response) {
     case 5:
       hideBarChart("chart3");
       break;
+    case 6:
+      sideBySideGraph();
+      break;
     default:
   }
 
