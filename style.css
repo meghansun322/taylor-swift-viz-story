@@ -53,12 +53,11 @@ section#intro{
   font-family: Arial, Helvetica, "san-serif";
   font-size: medium;
   padding-top: 100px;
+  text-align: center;
  
 }
 
-.sub-page{
-  text-align: center;
-}
+
 
 article {
     position: relative;
