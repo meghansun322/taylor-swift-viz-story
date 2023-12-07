@@ -40,27 +40,25 @@ function handleStepEnter(response) {
   // update graphic based on step
   switch (currentIndex) {
     case 0:
-      showBarGraph("Revenue");
+      sideBySideGraph((eras = true));
       break;
     case 1:
-      hideBarChart(previousIndex == 2 ? "chart2" : "chart1");
+      hideBarChart();
       break;
     case 2:
-      showBarGraphNoColor("Revenue");
+      sideBySideGraph((eras = false), (highlightEras = false));
       break;
     case 3:
-      hideBarChart(previousIndex == 4 ? "chart3" : "chart2");
+      hideBarChart();
       break;
     case 4:
-      showBarGraphHighlightEras("Revenue");
+      sideBySideGraph((eras = false), (highlightEras = true));
       break;
     case 5:
-      hideBarChart(previousIndex == 6 ? "chart4" : "chart3");
-      break;
-    case 6:
-      sideBySideGraph();
+      hideBarChart();
       break;
     default:
+      break;
   }
 
   previousIndex = currentIndex;

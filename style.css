@@ -56,6 +56,10 @@ section#intro{
  
 }
 
+.sub-page{
+  text-align: center;
+}
+
 article {
     position: relative;
     padding: 0 1rem;
