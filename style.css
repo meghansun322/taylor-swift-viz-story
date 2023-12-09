@@ -57,7 +57,18 @@ section#intro{
  
 }
 
+.center{
+  text-align: center;
+}
 
+.padding {
+  padding-top: 50px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
 
 article {
     position: relative;
